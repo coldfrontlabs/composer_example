@@ -15,10 +15,6 @@
           "url": "https://packages.drupal.org/8"
         },
         {
-          "type": "vcs",
-          "url": "git@gitlab.com:ottawa-community-housing/och_content_types.git"
-        },
-        {
           "type": "package",
           "package": {
             "name": "drupal/my_exaple_module",
@@ -58,7 +54,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true,
+        "sort-packages": true
     },
     "autoload": {
         "classmap": [
