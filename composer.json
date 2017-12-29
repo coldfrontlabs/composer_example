@@ -17,11 +17,11 @@
         {
           "type": "package",
           "package": {
-            "name": "drupal/my_exaple_module",
+            "name": "drupal/my_example_module",
             "type": "drupal-custom-module",
             "version": "dev-8.x-1.x",
             "source": {
-              "url": "https://github.com/coldfrontlabs/my_exaple_module",
+              "url": "https://github.com/coldfrontlabs/my_example_module",
               "type": "git",
               "reference": "8.x-1.x"
             }
@@ -34,7 +34,7 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.4",
-        "drupal/my_exaple_module": "dev-8.x-1.x",
+        "drupal/my_example_module": "dev-8.x-1.x",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
