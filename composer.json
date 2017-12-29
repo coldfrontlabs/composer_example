@@ -23,7 +23,7 @@
             "source": {
               "url": "https://github.com/coldfrontlabs/my_exaple_module",
               "type": "git",
-              "reference": "origin/8.x-1.x"
+              "reference": "8.x-1.x"
             }
           }
 	}
