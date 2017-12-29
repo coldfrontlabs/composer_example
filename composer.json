@@ -1,6 +1,6 @@
 {
-    "name": "composer_example/drupal-project",
-    "description": "Example Drupal 8 project",
+    "name": "composer-example/drupal-project",
+    "description": "Drupal 8 example projects with composer",
     "type": "project",
     "license": "GPL-2.0+",
     "authors": [
@@ -11,8 +11,8 @@
     ],
     "repositories": [
         {
-          "type": "composer",
-          "url": "https://packages.drupal.org/8"
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
         },
         {
           "type": "package",
@@ -26,16 +26,16 @@
               "reference": "origin/8.x-1.x"
             }
           }
-        }
+	}
     ],
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
-        "drupal/console": "^1.0.1",
-        "drupal/core": "8.4.0",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "~8.4",
         "drupal/my_exaple_module": "dev-8.x-1.x",
-        "drush/drush": "8.*",
+        "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
@@ -46,7 +46,7 @@
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
         "mikey179/vfsstream": "~1.2",
         "phpunit/phpunit": ">=4.8.28 <5",
-        "symfony/css-selector": "~2.8"
+        "symfony/css-selector": "~2.8|~3.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -78,19 +78,14 @@
     },
     "extra": {
         "installer-paths": {
-            "core": ["type:drupal-core"],
-            "libraries/{$name}": [
-                "type:drupal-library",
-                "type:bower-asset",
-                "type:npm-asset"
-            ],
-            "modules/contrib/{$name}": ["type:drupal-module"],
-            "profiles/{$name}": ["type:drupal-profile"],
-            "themes/contrib/{$name}": ["type:drupal-theme"],
-            "modules/custom/{$name}": ["type:drupal-custom-module"],
-            "themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     }
 }
-
